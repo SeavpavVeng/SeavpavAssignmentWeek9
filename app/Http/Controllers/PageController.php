@@ -22,5 +22,11 @@ class PageController extends Controller
         return view('pages.contact');
     }
 
+    public function estatePage(){
+        return view('pages.estate');
+    }
+
+  
+
 
 }

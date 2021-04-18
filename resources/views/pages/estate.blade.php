@@ -1,9 +1,20 @@
-@extends('layouts.app')
+<!DOCTYPE html>
+<html lang="en">
 
-@section('content')
-<!-- ======= Header/Navbar ======= -->
+<head>
+  
+</head>
+    @include('includes.header')
+<body>
 
-      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+  <!-- ======= Property Search Section ======= -->
+      @include('includes.search')
+  <!-- End Property Search Section -->
+
+  <!-- ======= Header/Navbar ======= -->
+  <nav class="navbar navbar-default navbar-trans navbar-expand-lg fixed-top">
+    <div class="container">
+  <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span></span>
         <span></span>
         <span></span>
@@ -45,8 +56,45 @@
       <button type="button" class="btn btn-b-n navbar-toggle-box-collapse d-none d-md-block" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-expanded="false">
         <span class="fa fa-search" aria-hidden="true"></span>
       </button>
-    <!-- End Header/Navbar -->
+      </div>
+    </nav>
+  <!-- End Header/Navbar -->
+     
+    
+  <!-- ======= Intro Section ======= -->
+      @include('includes.section')
+  <!-- End Intro Section -->
 
-  
+  <main id="main">
 
-@endsection
+    <!-- ======= Services Section ======= -->
+      @include('includes.services')
+    <!-- End Services Section -->
+
+    <!-- ======= Latest Properties Section ======= -->
+      @include('includes.properties')
+    <!-- End Latest Properties Section -->
+
+    <!-- ======= Agents Section ======= -->
+      @include('includes.agents')
+    <!-- End Agents Section -->
+
+    <!-- ======= Latest News Section ======= -->
+      @include('includes.news')
+    <!-- End Latest News Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+      @include('includes.testimonials')
+    <!-- End Testimonials Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+    @include('includes.footer')
+  <!-- End  Footer -->
+
+    @include('includes.script')
+
+</body>
+
+</html>
